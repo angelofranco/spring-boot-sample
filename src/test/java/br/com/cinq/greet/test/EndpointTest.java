@@ -1,6 +1,10 @@
 package br.com.cinq.greet.test;
 
 import org.junit.runner.RunWith;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.boot.test.TestRestTemplate;
@@ -21,5 +25,9 @@ public class EndpointTest {
 	private RestTemplate restTemplate = new TestRestTemplate();
 	
 	// Implement tests...
-
+	
+	@Test
+	public void test() {
+		assertEquals(true, true);
+	}
 }
